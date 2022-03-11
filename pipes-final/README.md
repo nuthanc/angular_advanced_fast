@@ -16,3 +16,8 @@
 
 * https://angular.io/api?query=pipe
 * E.g: https://angular.io/api/common/DatePipe
+
+### Chaining Multiple Pipes
+
+* Can apply multiple pipes
+* Parsed from left to right
