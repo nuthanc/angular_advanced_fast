@@ -11,3 +11,8 @@
 * Add parameters with :(colon)
 * Multiple parameters are separate by colon
 * E.g date:'fullDate'
+
+### Where to learn more about Pipes
+
+* https://angular.io/api?query=pipe
+* E.g: https://angular.io/api/common/DatePipe
