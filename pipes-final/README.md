@@ -44,3 +44,9 @@ ng g p filter --skipTests true
 * Add input to get the filter from the user
 * Use two way binding to filteredStatus property
 * Use filter pipe in ngFor loop to filter elements based on the status
+
+### Pure and Impure Pipes (or How to fix the Filter Pipe)
+
+* Pipe by default is run(triggered) only when the Pipe argument(input) changes 
+* This a good behaviour, otherwise Angular would have to rerun the Pipe when any data on the Page changes, which causes significant Performance issues
+* But if you want it to run even for Array and Object updates, we need to set pure: false in Pipe decorator
