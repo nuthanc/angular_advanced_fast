@@ -35,3 +35,12 @@
 
 * Pass parameter with colon(shorten:15)
 * For multiple parameters, you can specify another colon and the value and in the transform method accept another argument
+
+### Example Creating a Filter Pipe
+
+```sh
+ng g p filter --skipTests true
+```
+* Add input to get the filter from the user
+* Use two way binding to filteredStatus property
+* Use filter pipe in ngFor loop to filter elements based on the status
