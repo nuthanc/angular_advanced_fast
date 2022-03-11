@@ -21,3 +21,12 @@
 
 * Can apply multiple pipes
 * Parsed from left to right
+
+### Creating a Custom Pipe
+
+* filename.pipe.ts (shorten.pipe.ts)
+* It's not strictly necessary but you can implement the PipeTransform interface which dictates you to implement transform method
+* transform takes **value and list of arguments**
+* transform always returns something
+* Add ShortenPipe to **declarations in AppModule** just like Components and Directives
+* **Pipe decorator** also needs to added to the class to *indicates the name*
