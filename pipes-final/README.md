@@ -50,3 +50,11 @@ ng g p filter --skipTests true
 * Pipe by default is run(triggered) only when the Pipe argument(input) changes 
 * This a good behaviour, otherwise Angular would have to rerun the Pipe when any data on the Page changes, which causes significant Performance issues
 * But if you want it to run even for Array and Object updates, we need to set pure: false in Pipe decorator
+
+### Understanding the async Pipe
+
+* appStatus which resolves asynchronously in AppComponent
+* App Status: [object Object] in the beginning because it resolves later
+  * Angular doesn't observe this object
+* **async** bulitin pipe recognizes that something changed and prints that data
+* It works with Promises and Observables
