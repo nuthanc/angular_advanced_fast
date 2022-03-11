@@ -30,3 +30,8 @@
 * transform always returns something
 * Add ShortenPipe to **declarations in AppModule** just like Components and Directives
 * **Pipe decorator** also needs to added to the class to *indicates the name*
+
+### Parametrizing a Custom Pipe
+
+* Pass parameter with colon(shorten:15)
+* For multiple parameters, you can specify another colon and the value and in the transform method accept another argument
