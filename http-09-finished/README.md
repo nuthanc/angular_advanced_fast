@@ -22,3 +22,8 @@ return next.handle(modifiedRequest).pipe(
     })
 );
 ```
+
+### 26. Multiple Interceptors
+
+* Add multiple in AppModule 
+* Order matters because that is how they will be executed
