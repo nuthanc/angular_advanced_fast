@@ -37,3 +37,11 @@
 
 * Bug when Ingredients are not added while adding a new Recipe
 * For that we can pipe in fetchRecipes and transform the data using map
+
+### 7. Resolving Data Before Loading
+
+* Add recipes-resolver.service.ts to ensure that there is data
+  * Note: Check about resolvers [here](https://github.com/nuthanc/angular_course/blob/main/routing-start/README.md#resolving-dynamic-data-with-the-resolve-guard)
+* We are using tap for fetchRecipes and subscribing should be done in the Header Component(since resolve can return Observable<any> | Promise<any>)
+* Inside resolve, we don't need to subscribe because it is done automatically once data is there
+* Add resolve to routes requiring the data to be present
