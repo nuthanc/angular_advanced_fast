@@ -32,3 +32,9 @@
 * If multiple places in the App are interested in the Error, then we can use a Subject for this
 * check this in createAndStorePost method in PostsService
 * Don't forget to unsubscribe in the Component
+
+### 17. Using the catchError Operator
+
+* catchError gets the same errorMessage as what we get in the 2nd argument of the subscribe method
+* catchError Operator in pipe to perform generic error handling stuff like sending it to Analytics
+* Note we need to return and throwError the errorResponse for it to reach subscribe
