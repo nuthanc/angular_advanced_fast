@@ -26,3 +26,9 @@
 * 2nd argument to subscribe for error callback
 * Set error property based on error.message
 * Console log the error to check all the keys and values
+
+### 16. Using Subjects for Error Handling
+
+* If multiple places in the App are interested in the Error, then we can use a Subject for this
+* check this in createAndStorePost method in PostsService
+* Don't forget to unsubscribe in the Component
