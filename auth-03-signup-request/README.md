@@ -21,3 +21,9 @@ https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]
   * loading.io
 * Now folder in shared and add loading-spinner and place in the css and ts files
 * isLoading and error properties in AuthComponent
+
+### 11. Improving Error Handling
+
+* Error Handling in AuthComponent
+* Check Error codes in Firebase and based on that have a switch case
+* Instead of having this logic in the AuthComponent, we can handle in the AuthService in the pipe's catchError
