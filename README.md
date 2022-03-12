@@ -15,3 +15,8 @@
 ### Attached http-01 to http-09
 
 * Check each projects README starting with http-02
+
+## Course Project - HTTP
+
+* Add prj-http-01 and prj-http-02
+* Check README in prj-http-02
