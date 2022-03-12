@@ -15,3 +15,12 @@
 * Inject HttpClient in DataStorageService
 * Add HttpClientModule in AppModule's imports 
   * Adding before AppRoutingModule because 1st Angular's then our Custom modules
+
+### 4. Storing Recipes
+
+* storeRecipes in DataStorageService
+* Inject RecipeService in DataStorageService to get the recipes
+* post for 1 recipe
+* Using put request to override the data stored previously
+* The above depends on the API
+* The Header Component is interested in the Response, so we can subscribe in the Service itself
