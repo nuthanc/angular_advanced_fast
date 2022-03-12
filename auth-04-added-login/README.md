@@ -9,3 +9,11 @@
 ### 13. Login Error Handling
 
 * Share Error Handling logic in private handleError method of AuthService
+
+### 14. Creating & Storing the User Data
+
+* user.model.ts for the User
+* getter for token which accesses _token
+* Add user Subject in AuthService
+* tap operator to signup pipe method
+* private handleAuthentication method in AuthService
