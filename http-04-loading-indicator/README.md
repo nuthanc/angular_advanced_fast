@@ -15,3 +15,8 @@
 ### 10. Outputting Posts
 
 * Assign loadedPosts in subscribe and output it in the Template based on its length
+
+### 11. Showing a Loading Indicator
+
+* isFetching property serving as Indicator which is true when fetchPosts is called and is false in the subscribe method when it is done
+* Loading... when isFetching is true
