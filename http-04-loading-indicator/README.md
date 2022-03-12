@@ -11,3 +11,7 @@
 * this.http.get<{ [key: string]: Post }>
   * Generic type of the response body
 * This is available on all requests of HttpClient
+
+### 10. Outputting Posts
+
+* Assign loadedPosts in subscribe and output it in the Template based on its length
