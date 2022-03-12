@@ -14,3 +14,10 @@ https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]
 
 * In Auth component's onSubmit, we are checking for validity again so that if a User used developer tools to enable the Submit button, we can have this extra validation step here
 * Inject AuthService and signup and subscribe 
+
+### 10. Adding a Loading Spinner & Error Handling Logic
+
+* Google for CSS loading spinners
+  * loading.io
+* Now folder in shared and add loading-spinner and place in the css and ts files
+* isLoading and error properties in AuthComponent
