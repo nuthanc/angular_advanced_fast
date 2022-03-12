@@ -45,3 +45,10 @@
 * We are using tap for fetchRecipes and subscribing should be done in the Header Component(since resolve can return Observable<any> | Promise<any>)
 * Inside resolve, we don't need to subscribe because it is done automatically once data is there
 * Add resolve to routes requiring the data to be present
+
+### 8. Fixing a Bug with the Resolver
+
+* Changes are not saved after Editing
+* This is because of the Resolver which fetches new Recipes from the Server and it overrides
+* So only fetch when there are no Recipes
+  * This is done by injecting the RecipeService in the Resolver
