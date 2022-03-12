@@ -13,3 +13,8 @@
 * 2nd Approach is to just return the Observable and subscribe in the Component
 * Result Handling in the Component but the heavy lifting(sending of Request and transforming the data) in the Service
 * If the Component doesn't care about the Response, subscribing can be done in the Service itself
+
+### 14. Sending a DELETE Request
+
+* deletePosts in posts.service.ts
+* Subscribing in the Component to reassing the property
