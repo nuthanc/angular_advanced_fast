@@ -18,3 +18,11 @@
 
 * deletePosts in posts.service.ts
 * Subscribing in the Component to reassing the property
+
+### 15. Handling Errors
+
+* Change Rules in firebase for read: false
+* Now we get an Error
+* 2nd argument to subscribe for error callback
+* Set error property based on error.message
+* Console log the error to check all the keys and values
