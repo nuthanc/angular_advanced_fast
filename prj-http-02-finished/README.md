@@ -32,3 +32,8 @@
 * The Header Component is interested in the Response, so we can subscribe in the Service itself
 * setRecipes in the RecipeService for overriding with the get response data
   * Don't forget to call the recipesChanged next
+
+### 6. Transforming Response Data
+
+* Bug when Ingredients are not added while adding a new Recipe
+* For that we can pipe in fetchRecipes and transform the data using map
