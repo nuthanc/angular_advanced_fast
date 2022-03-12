@@ -20,3 +20,11 @@
 
 * Add prj-http-01 and prj-http-02
 * Check README in prj-http-02
+
+## Authentication & Route Protection in Angular
+
+### How Authentication Works
+
+* Client -> Sends Auth Data -> Server(Restful API which is stateless) -> Token
+* Client stores token in Storage
+* Stored Token is sent to authorize subsequent request
