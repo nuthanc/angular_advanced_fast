@@ -16,3 +16,9 @@
     * Helper utility that we shouldn't use anymore
     * Component created and added to DOM via code (imperatively)
     * Component is managed & added by developer
+
+### 4. Using ngIf
+
+* onClose method in Alert and there emitting close event
+* Listen to close in Auth Component and call onHandleError where error is set to null
+* This approach is the recommended one as it is much easier
