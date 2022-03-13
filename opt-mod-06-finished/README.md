@@ -16,3 +16,11 @@
 * CoreModule is eagerly loaded module because it is imported into AppModule
 * ShoppingListModule: Lazy loaded module
 * Shared: Eagerly loaded because it is imported into AppModule
+
+### 18. Ahead-of-Time Compilation
+
+![aot](../img/aot.png)
+* By default, ng serve uses JIT compilation(better for debugging)
+* ng build --prod
+  * This generates a dist folder bundled and optimized version
+  * Removes Angular Compiler
