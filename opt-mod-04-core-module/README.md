@@ -7,3 +7,7 @@
 * Check CoreModule
 * Services doesn't need to be exported
 * Import CoreModule in AppModule
+
+### 11. Adding an Auth Feature Module
+
+* Add AuthModule
