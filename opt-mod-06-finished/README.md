@@ -5,3 +5,7 @@
 * Preload the bundles as soon as possible
 * E.g: When on auth page, it will preload recipes and shopping-list
 * Advantage: Initial loading is fast for Root
+
+### 16. Modules & Services
+
+![s&m](../img/services_modules.png)
