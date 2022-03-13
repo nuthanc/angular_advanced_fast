@@ -9,3 +9,10 @@
 ### 16. Modules & Services
 
 ![s&m](../img/services_modules.png)
+
+### 17. Loading Services Differently
+
+* Check logging.service.ts
+* CoreModule is eagerly loaded module because it is imported into AppModule
+* ShoppingListModule: Lazy loaded module
+* Shared: Eagerly loaded because it is imported into AppModule
