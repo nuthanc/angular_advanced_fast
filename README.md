@@ -43,3 +43,13 @@
 ### Attaching dyn-cmp-finished
 
 * Check its README
+
+## Angular Modules & Optimizing Angular Apps
+
+### What are Modules
+
+* Ways of *bundling Angular Building blocks*(Components, Directives, Services, Pipes) together
+* Every Angular App requires *atleast 1 Module*(AppModule)
+* Angular analyzes NgModules to *understand* your application and its features
+* *Core Angular features* are included in Angular modules(e.g. FormsModule) to load them only when needed
+* You *can't use a feature/building block* without including it in a Module
