@@ -29,6 +29,6 @@
 * Client stores token in Storage
 * Stored Token is sent to authorize subsequent request
 
-### Attaching auth-01-auth
+### Attaching auth-01-auth to auth-08
 
 * Check its README
