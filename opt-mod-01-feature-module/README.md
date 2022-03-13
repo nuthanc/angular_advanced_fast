@@ -31,3 +31,11 @@
   * Use exports of all Components included in imports in RecipesModule
   * Add RecipesModule in imports of AppModule
 * FormsModule and AppRoutingModule won't be available in RecipesModule
+
+### 5. Splitting Modules Correctly
+
+* After moving to RecipesModule, we can fixing router-outlet error by adding RouterModule(without forRoot) in imports
+* We have another error for ngFor and ngIf which are provided by BrowserModule
+* HttpClientModule provide services so it is available Application-wide
+* BrowserModule should only be imported once in the AppComponent because it contains App startup work that only have to run once. In all other places, we need to import CommonModule
+* Next formGroup error for which we need to import ReactiveFormsModule
