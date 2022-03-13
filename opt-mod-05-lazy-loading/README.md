@@ -15,3 +15,7 @@
 * Path in feature needs to be empty path
 * Add in AppRouting module the routes, the path which was emptied and then loadChildren
 * After adding this lazy loading, we don't need to import in imports os AppModule
+
+### 14. More Lazy Loading
+
+* Add Lazy loading for ShoppingList as well
