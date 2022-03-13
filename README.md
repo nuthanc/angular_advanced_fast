@@ -46,6 +46,7 @@
 
 ## Angular Modules & Optimizing Angular Apps
 
+
 ### What are Modules
 
 * Ways of *bundling Angular Building blocks*(Components, Directives, Services, Pipes) together
@@ -53,3 +54,7 @@
 * Angular analyzes NgModules to *understand* your application and its features
 * *Core Angular features* are included in Angular modules(e.g. FormsModule) to load them only when needed
 * You *can't use a feature/building block* without including it in a Module
+
+### Attaching opt-mod-01 to opt-mod-06
+
+* Check their READMEs
