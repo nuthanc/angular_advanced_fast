@@ -22,3 +22,13 @@
 * onClose method in Alert and there emitting close event
 * Listen to close in Auth Component and call onHandleError where error is set to null
 * This approach is the recommended one as it is much easier
+
+### 5. Preparing Programmatic Creation
+
+* Add showErrorAlert for this approach
+* Can't create new Component using new cause Angular doesn't understand this to wire a Component, changeDetection etc
+* We need to inject ComponentFactoryResolver
+* To tell where to add, we might think Local Reference and View Child would work, but no
+* We need ViewContainerRef
+* ViewContainerRef is an object managed by Angular which gives a pointer/reference to a place in the DOM
+* Create placeholder directive for this in shared directory
