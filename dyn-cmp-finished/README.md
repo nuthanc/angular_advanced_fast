@@ -32,3 +32,11 @@
 * We need ViewContainerRef
 * ViewContainerRef is an object managed by Angular which gives a pointer/reference to a place in the DOM
 * Create placeholder directive for this in shared directory
+
+### 6. Creating a Component Programmatically
+
+* Use ng-template instead of div to add the appPlaceholder
+* In AuthComponent's ViewChild, type is passed which will look for its existence in the template
+* Clear anything created before on hostViewContainerRef
+* Use hostViewContainerRef's createComponent and pass the alertCmpFactory
+* There is some error after this
