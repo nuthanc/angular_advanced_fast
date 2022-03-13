@@ -32,3 +32,10 @@
 ### Attaching auth-01-auth to auth-08
 
 * Check its README
+
+## Dynamic Components
+
+### Module Introduction
+
+* Dynamic Components are Components created at Runtime
+* E.g: Showing a Modal, Alert, Overlay which only should be loaded upon certain action like error 
