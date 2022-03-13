@@ -15,3 +15,11 @@
 * Retrieve that when application restarts using autoLogin method
 * Call autoLogin in App Component
   * This is the place which runs early in our App lifecycle
+
+### 20. Adding Auto-Logout
+
+* Clear data when Logging out
+* autoLogout() and setTimeout
+* autoLogout's setTimeout shouldn't be running when User manually hits Logout
+* So in logout we need to clear that timer
+* autoLogout should be called in handleAuthentication and autoLogin
