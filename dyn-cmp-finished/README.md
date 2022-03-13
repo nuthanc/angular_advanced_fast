@@ -39,4 +39,12 @@
 * In AuthComponent's ViewChild, type is passed which will look for its existence in the template
 * Clear anything created before on hostViewContainerRef
 * Use hostViewContainerRef's createComponent and pass the alertCmpFactory
-* There is some error after this
+* There is some error after this(No error in Angular 9 and higher)
+
+### 7. Understanding entryComponents
+
+* Angular creating Components behind the scenes
+  * Any Component, Directives and Pipes needs to added in declarations of AppModule
+  * Next it checks for those Components in the template(html files selector) 
+  * Next it checks in Routes
+  * But for ones created in Code, we need to tell explicitly in entryComponents of AppModule
