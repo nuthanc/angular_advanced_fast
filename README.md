@@ -39,3 +39,7 @@
 
 * Dynamic Components are Components created at Runtime
 * E.g: Showing a Modal, Alert, Overlay which only should be loaded upon certain action like error 
+
+### Attaching dyn-cmp-finished
+
+* Check its README
