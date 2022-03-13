@@ -48,3 +48,10 @@
   * Next it checks for those Components in the template(html files selector) 
   * Next it checks in Routes
   * But for ones created in Code, we need to tell explicitly in entryComponents of AppModule
+
+### 8. Data Binding & Event Binding
+
+* Store ref of createComponent and use instance property
+* message and close in available on instance property
+* For close, use Subscription(only exception where Subject isn't used)
+* Don't forget to unsubscribe
