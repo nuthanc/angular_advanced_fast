@@ -46,7 +46,6 @@
 
 ## Angular Modules & Optimizing Angular Apps
 
-
 ### What are Modules
 
 * Ways of *bundling Angular Building blocks*(Components, Directives, Services, Pipes) together
@@ -58,3 +57,14 @@
 ### Attaching opt-mod-01 to opt-mod-06
 
 * Check their READMEs
+
+## Deploying an Angular App
+
+### 2. Deployment Preparation & Steps
+
+* Use and Check environment variables
+* Polish & Test Code
+* ng build --prod
+  * Use AOT compilation
+* Deploy build artifacts(generated files) to static hosts
+  * Because it's only html, js and css
