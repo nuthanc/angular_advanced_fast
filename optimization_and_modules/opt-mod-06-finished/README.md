@@ -8,7 +8,7 @@
 
 ### 16. Modules & Services
 
-![s&m](../img/services_modules.png)
+![s&m](../../img/services_modules.png)
 
 ### 17. Loading Services Differently
 
@@ -19,7 +19,7 @@
 
 ### 18. Ahead-of-Time Compilation
 
-![aot](../img/aot.png)
+![aot](../../img/aot.png)
 * By default, ng serve uses JIT compilation(better for debugging)
 * ng build --prod
   * This generates a dist folder bundled and optimized version

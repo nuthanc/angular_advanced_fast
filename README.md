@@ -72,3 +72,19 @@
 ### Add deployment-finished
 
 * Check its README
+
+## Working with NgRx in our Project
+
+### 2. What is Application State
+
+* State: **Data** that is important to our App and influences **what's visible on the screen**
+![state](img/state.png)
+* State in our App like
+  * ingredients in ShoppingListService
+  * isLoading in AuthComponent
+![hard state](img/hard_state.png)
+* RxJS to the Rescue with
+  * Event in UI/App -> State Changing Event -> Observable -> Operators -> Listener -> Update UI
+  * We are doing this with Subjects(e.g recipesChanged)
+* Tricky with having proper structure
+* NgRx comes into play here

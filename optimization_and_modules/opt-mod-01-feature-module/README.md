@@ -19,7 +19,7 @@
 ### 4. Getting Started with Feature Modules
 
 * Instead of having 1 big AppModule, we can split it to different Feature Modules
-![Multiple Modules](../img/mul_modules.png)
+![Multiple Modules](../../img/mul_modules.png)
 * In our source project, we have mainly 3 feature areas
   * recipes
   * shopping-list

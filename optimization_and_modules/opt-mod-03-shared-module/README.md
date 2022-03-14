@@ -9,7 +9,7 @@
 
 ### 9. Understanding Shared Modules
 
-[Shared Modules](../img/shared.png)
+![Shared Modules](../../img/shared.png)
 * Now moving only CommonModule to SharedModule's imports but any common imports can be added here
 * Important: Need to export in exports
 * Error that DropdownDirective is part of the declarations of 2 modules
