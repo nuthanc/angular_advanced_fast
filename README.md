@@ -68,3 +68,7 @@
   * Use AOT compilation
 * Deploy build artifacts(generated files) to static hosts
   * Because it's only html, js and css
+
+### Add deployment-finished
+
+* Check its README
