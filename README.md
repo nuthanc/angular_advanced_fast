@@ -88,3 +88,16 @@
   * We are doing this with Subjects(e.g recipesChanged)
 * Tricky with having proper structure
 * NgRx comes into play here
+
+### 3. What is NgRx
+
+* Issues with RxJS Approach
+  * State can be updated from anywhere
+  * State is (possibly) mutable
+  * Handling side effects(e.g Http calls) is unclear
+* No Specific pattern is enforced
+* This is where Redux comes into picture
+* Redux is state management library
+![redux](img/redux.png)
+* NgRx is Angular's implementation of Redux
+![ngrx](img/ngrx.png)
