@@ -101,3 +101,7 @@
 ![redux](img/redux.png)
 * NgRx is Angular's implementation of Redux
 ![ngrx](img/ngrx.png)
+
+### Add ngrx folder
+
+* Check each folder's README
