@@ -21,3 +21,9 @@
 * Add authLogout effect and autoLogin effect
 * Dispatch AutoLogin action in app.component.ts
 * In AuthEffects map, we need to return dummy action for conditions not caught in if
+
+### 32. Adding Auto-Logout
+
+* Manager timer in AuthService and call in Effects
+* Race condition in AuthGuard and effect
+* Remove logout from authRedirect effect and in separate authLogout actino
