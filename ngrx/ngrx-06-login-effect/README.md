@@ -51,3 +51,10 @@
 * Registering is done in AppModule after StoreModule
   * EffectsModule.forRoot
 * In AuthComponent, inject store and dispatch LoginStart
+
+### 26. Managing UI State in NgRx
+
+* Add LoginFail action
+* New property of authError and loading in Auth Reducer
+* IN AuthComponent, add ngOnInit and subscribe to store select's authState
+* isLoginMode matters only to the Component so is not added to the store
