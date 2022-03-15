@@ -13,3 +13,16 @@
   * Result of http request matters but the actual sending doesn't matter
 * Package is @ngrx/effects
 * npm i @ngrx/effects
+
+### 23. Defining the First Effect
+
+* Add auth.effects.ts in store
+* Inject Actions from effects
+  * Convention $ at the end
+* Actions is one big observable that will give access to all dispatched actions
+* Effects are added as a normal property in the Class
+  * No need to call subscribe because ngrx effects will call it for us
+  * With ofType we can filter for types
+* Add LOGIN_START in auth.actions
+  * We can rename LOGIN to LOGIN_SUCCESS but we can leave it as it is
+* ofType triggers only when action of that type is triggered
