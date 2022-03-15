@@ -44,3 +44,8 @@ case ShoppingListActions.START_EDIT:
 * The in ShoppingEditComponent, dispatch  StopEdit in onClear
   * In ngOnInit, select shoppingList and subscribe from it
   * Also unsubscribe the subscription
+
+### 15. Removing Redundant Component State Management
+
+* We don't need editIngredient index property in the Component as we already have it in the store's state
+* So we can remove them from the action argument from Edit and Delete actions
