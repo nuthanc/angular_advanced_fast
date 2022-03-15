@@ -58,3 +58,10 @@
 * New property of authError and loading in Auth Reducer
 * IN AuthComponent, add ngOnInit and subscribe to store select's authState
 * isLoginMode matters only to the Component so is not added to the store
+
+### 27. Finishing the Login Effect
+
+* Adding navigation as a Side effect in AuthEffects
+* Add authSuccess property for this
+* Inject Angular Router
+* This Effect doesn't return a new Action so we need to let ngrx effects know using dispatch as false in the Effect decorator
