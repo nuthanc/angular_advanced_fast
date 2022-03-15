@@ -11,3 +11,12 @@
 * The flow will be like this
   * When a new Ingredient is added, the action is dispatched to all the reducers with the store's dispatch and action object as argument
   * The reducer with the correct type processes it and updates the store
+
+### 10. Multiple Actions
+
+* In shopping-list.actions.ts, add another action class AddIngredients and ADD_INGREDIENTS constant
+* In shoppingListReducer, we get an error when we try to add ShoppingListActions.ADD_INGREDIENTS case
+* This is because we are mentioning action as ShoppingListActions.AddIngredient
+* But there is another action class in shopping-list.actions.ts
+* So we can export ShoppingListActions as a type of union of all the Action classes
+* Inject store in RecipeService and dispatch action in addIngredientsToShoppingList
