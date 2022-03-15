@@ -17,3 +17,12 @@ const updatedIngredient = {
 
 ```
 * In ShoppingEditComponent, dispatch action for edit ingredient in onSubmit
+
+### 13. Expanding the State
+
+* In ShoppingEditComponent ngOnInit, the values are coming from service and not the store
+* To translate startedEditing Subject, we can dispatch an action
+* Add editedIngredient in the initialState of shoppingListReducer
+* Since we are adding new property in state, we have to change everywhere where state was injected
+* So instead, use a State interface
+* We can go a step further and add AppState interface
