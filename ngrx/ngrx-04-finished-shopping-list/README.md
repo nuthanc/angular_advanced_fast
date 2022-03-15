@@ -56,3 +56,8 @@ case ShoppingListActions.START_EDIT:
 * Reducer returning new state based on Action type
 * Action classes containing type and payload(optional)
 * Initial setup requires lot of work but later adding new state is easy
+
+### 17. One Root State
+
+* Add authReducer and import it in AppModule
+* Global store folder and import all in appState and create an ActionReducerMap which is similar to what forRoot does in StoreModule
