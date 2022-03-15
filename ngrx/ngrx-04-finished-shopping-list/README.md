@@ -49,3 +49,7 @@ case ShoppingListActions.START_EDIT:
 
 * We don't need editIngredient index property in the Component as we already have it in the store's state
 * So we can remove them from the action argument from Edit and Delete actions
+* Also in the reducer, update editedIngredient: null and editedIngredientIndex: -1 in UPDATE_INGREDIENT and DELETE_INGREDIENT
+### 16. First Summary & Clean Up
+
+* 
