@@ -14,3 +14,10 @@
 * Unsubscribe store in Authcomponent
 * Action for CLEAR_ERROR
 * Multiple actions redirect in authRedirect Effect
+
+### 31. Adding Auto-Login with NgRx
+
+* Add AutoLogin action and handle localStorage in handleAuthentication
+* Add authLogout effect and autoLogin effect
+* Dispatch AutoLogin action in app.component.ts
+* In AuthEffects map, we need to return dummy action for conditions not caught in if
