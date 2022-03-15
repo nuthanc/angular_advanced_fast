@@ -11,3 +11,11 @@
 * Update all the places with this.user.next with the dispatch action
 * Side Effect: Not directly connected to state
   * E.g localStorage
+
+### 20. Auth Finished (For Now...)
+
+* Comment out user BehaviorSubject to know where all you need to change using the errors
+* Changes in 
+  * auth-interceptor.service.ts
+  * auth.guard.ts
+  * header.component.ts
