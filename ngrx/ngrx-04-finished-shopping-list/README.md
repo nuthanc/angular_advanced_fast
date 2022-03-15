@@ -26,3 +26,21 @@ const updatedIngredient = {
 * Since we are adding new property in state, we have to change everywhere where state was injected
 * So instead, use a State interface
 * We can go a step further and add AppState interface
+
+### 14. Managing More State via NgRx
+
+* Add StartEdit and StopEdit actions in shopping-list-actions.ts
+```ts
+case ShoppingListActions.START_EDIT:
+      return {
+        ...state,
+        editedIngredientIndex: action.payload,
+        // Bad because we are passing the original reference(because ingredient is an object) and if it is changed in the Component, it is directly changed in the store
+        // editedIngredient: state.ingredients[action.payload]
+        editedIngredient: { ...state.ingredients[action.payload] }
+      };
+```
+* IN ShoppingListComponent, dispatch an action instead of using the service in onEditItem
+* The in ShoppingEditComponent, dispatch  StopEdit in onClear
+  * In ngOnInit, select shoppingList and subscribe from it
+  * Also unsubscribe the subscription
