@@ -26,3 +26,17 @@
 * Add LOGIN_START in auth.actions
   * We can rename LOGIN to LOGIN_SUCCESS but we can leave it as it is
 * ofType triggers only when action of that type is triggered
+
+### 24. Effects & Error Handling
+
+* Create LoginStart class in auth.actions.ts
+* switchMap for creating new Observable by taking data from another Observable
+* Copy http post snippet from login method from AuthService and paste in switchMap
+* An effect by default should return a new Action at the end because effect by itself doesn't change the state
+* So we need to add @Effect decorator to the property
+* Effects need to be an ongoing Observable screen(must never die as long as our app is running)
+* Errors have to be handled on a different level
+* Need to add pipe on the inner observable
+* Use 'of' to create new Observable without Error
+* If we create an Error the Observable dies
+  * An Observable completes whenever an Error is thrown
