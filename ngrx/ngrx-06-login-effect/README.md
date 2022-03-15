@@ -40,3 +40,14 @@
 * Use 'of' to create new Observable without Error
 * If we create an Error the Observable dies
   * An Observable completes whenever an Error is thrown
+
+### 25. Login via NgRx Effects
+
+* IN of(), we need to create a new Action
+  * No need to dispatch, cause ngrx effects will automatically do that
+* To wire effects, we need to add @Injectable decorator to the AuthEffects Class
+  * providedIn root not req because it is never injected itself
+  * It needs Injectable so that things can be injected to this class like http and actions
+* Registering is done in AppModule after StoreModule
+  * EffectsModule.forRoot
+* In AuthComponent, inject store and dispatch LoginStart
