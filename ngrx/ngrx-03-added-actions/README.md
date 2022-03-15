@@ -1,27 +1,13 @@
-# NgCompleteGuideUpdate
+### 9. Dispatching Actions
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* You can also subscribe to the store's select method
+* Unsubscribe would be done automatically by Angular and ngrx, but to be super safe manually store and unsubscribe
+* Check ShoppingEditComponent for dispatching actions
+* First inject the store and use dispatch method in onSubmit
+  * Note: Actions are defined in shopping-list.actions.ts
+* Add payload to constructor as a public property
+  * public because we need to access it in Reducers
+* Now add Ingredient is the only thing that works in ShoppingEditComponent
+* The flow will be like this
+  * When a new Ingredient is added, the action is dispatched to all the reducers with the store's dispatch and action object as argument
+  * The reducer with the correct type processes it and updates the store
