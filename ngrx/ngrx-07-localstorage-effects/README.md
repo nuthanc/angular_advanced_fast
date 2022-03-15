@@ -3,3 +3,7 @@
 * Add authSignup property in AuthEffects
 * export constants in auth.action.ts
 * We can reuse login_success and fail for signup, so rename as authenticate
+
+### 29. Adding Signup
+
+* Grab signup code from AuthService and use in authSignup
