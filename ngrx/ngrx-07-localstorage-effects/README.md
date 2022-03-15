@@ -7,3 +7,10 @@
 ### 29. Adding Signup
 
 * Grab signup code from AuthService and use in authSignup
+
+### 30. Further Auth Effects
+
+* Handle SIGNUP_START in the same case as LOGIN_START by letting it fall through
+* Unsubscribe store in Authcomponent
+* Action for CLEAR_ERROR
+* Multiple actions redirect in authRedirect Effect
