@@ -52,4 +52,7 @@ case ShoppingListActions.START_EDIT:
 * Also in the reducer, update editedIngredient: null and editedIngredientIndex: -1 in UPDATE_INGREDIENT and DELETE_INGREDIENT
 ### 16. First Summary & Clean Up
 
-* 
+* Add StoreModule and forRoot which contains a map of Reducers in AppModule
+* Reducer returning new state based on Action type
+* Action classes containing type and payload(optional)
+* Initial setup requires lot of work but later adding new state is easy
