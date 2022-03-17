@@ -6,3 +6,7 @@
 * Array Destructuring assignment done in the Argument
 * Set dispatch to false
 * Then in the header remove the data storage service and replace with dispatch action of STORE_RECIPES
+
+### 42. Cleanup Work
+
+* We can get rid of RecipeService and clean that up in CoreModule
