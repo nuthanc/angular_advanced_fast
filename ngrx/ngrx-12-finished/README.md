@@ -10,3 +10,8 @@
 ### 42. Cleanup Work
 
 * We can get rid of RecipeService and clean that up in CoreModule
+
+### 43. Wrap Up
+
+* ngrx.io
+* github ngrx -> ngrx/platform -> projects -> example-app
