@@ -123,3 +123,5 @@
 ### Quick Note about ModuleMapLoader
 
 * A quick note: In the next lecture, I mention that it's important to add ModuleMapLoader to your app.server.ts file - if you're using Angular 9, this is NOT required anymore!
+
+## Add angular_universal folder
