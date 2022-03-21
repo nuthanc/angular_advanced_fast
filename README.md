@@ -119,3 +119,7 @@
 * Angular Universal allows to prerender your Angular App on the Server
   * On the fly Prerender pages Users visit
   * First load is handled on the Server
+
+### Quick Note about ModuleMapLoader
+
+* A quick note: In the next lecture, I mention that it's important to add ModuleMapLoader to your app.server.ts file - if you're using Angular 9, this is NOT required anymore!
