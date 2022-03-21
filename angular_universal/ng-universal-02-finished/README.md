@@ -19,3 +19,12 @@ ng add @nguniversal/express-engine --clientProject basics
 * Static Host will no longer work
 * serve:ssr on that host
 * If you now inspect Page Source, you will see the actual contents of the Page
+
+### 4. Adding Angular Universal with NestJS
+
+```sh
+ng add @nestjs/ng-universal
+```
+* NestJS allows you to write server side code along with Angular Universal
+  * FullStack
+  * server folder
