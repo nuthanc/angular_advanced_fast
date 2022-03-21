@@ -105,3 +105,17 @@
 ### Add ngrx folder
 
 * Check each folder's README
+
+## Angular Universal
+
+### Module Introduction
+
+* Angular runs on the Browser
+  * View Page Source
+  * script imports at the end is our Angular Application
+  * Downside on slower networks
+  * Users will see nothing until JS is downloaded in slower networks
+  * Search Engine does not see what the user sees
+* Angular Universal allows to prerender your Angular App on the Server
+  * On the fly Prerender pages Users visit
+  * First load is handled on the Server
