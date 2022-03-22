@@ -42,3 +42,11 @@
 
 * Use fakeAsync to get rid of whenStable function but call tick in between
 * In a fake Async env, tick allows to finish all async tasks now
+
+### 10. Isolated vs Non-Isolated Tests
+
+* A Pipe can be tested Independently(Isolated)
+* Pure functions in a Service can also be tested Independently
+* Add reverse.pipe.ts and reverse.pipe.spec.ts
+* Just create a new Instance of ReversePipe and check it
+* No need for TestBed and other utilities
