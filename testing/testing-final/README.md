@@ -27,3 +27,13 @@
 * User injector to get the UserService in the test
 * Remember to run detectChanges to update our Properties
 * Check using toContain and not.toContain about the App's username
+
+### 8. Simulating Async Tasks
+
+* Add data.service.ts for async tasks
+* spyOn which keeps on checking when the method gets executed
+  * Give back our own data(Faking request to API)
+* Wrap callback with async
+  * This creates an asynchronous testing environment
+  * Also need to use fixture.whenStable()
+    * React when all Async tasks are finished
