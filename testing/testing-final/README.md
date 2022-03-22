@@ -20,3 +20,10 @@
   * Use compileComponents for non-webpack based setup
 * Add a test in 'it' block
 * ng test
+
+### 7. Testing Dependencies Components and Services
+
+* Add user.service.ts
+* User injector to get the UserService in the test
+* Remember to run detectChanges to update our Properties
+* Check using toContain and not.toContain about the App's username
