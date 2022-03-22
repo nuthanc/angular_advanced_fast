@@ -37,3 +37,8 @@
   * This creates an asynchronous testing environment
   * Also need to use fixture.whenStable()
     * React when all Async tasks are finished
+
+### 9. Using fakeAsync and tick
+
+* Use fakeAsync to get rid of whenStable function but call tick in between
+* In a fake Async env, tick allows to finish all async tasks now
