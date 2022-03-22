@@ -125,3 +125,13 @@
 * A quick note: In the next lecture, I mention that it's important to add ModuleMapLoader to your app.server.ts file - if you're using Angular 9, this is NOT required anymore!
 
 ## Add angular_universal folder
+
+## A Basic Introduction to Unit Testing in Angular Apps
+
+### Why Unit Tests?
+
+![UT](img/ut.png)
+* Unit Tests allows us to
+  * Guard against breaking changes
+  * Analyze code behavior(Expected and Unexpected)
+  * Reveal Design Mistakes
