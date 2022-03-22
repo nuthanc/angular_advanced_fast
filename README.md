@@ -135,3 +135,4 @@
   * Guard against breaking changes
   * Analyze code behavior(Expected and Unexpected)
   * Reveal Design Mistakes
+* Also check https://github.com/nuthanc/microservice/tree/master/ticketing#scope-of-testing
