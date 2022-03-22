@@ -12,3 +12,11 @@
 
 * ng test to run our tests
 * Make any changes to fail our tests
+
+### 6. Adding a Component and some fitting Tests
+
+* ng g c user
+* Add the Component to test in TestBed.configureTestingModule declarations
+  * Use compileComponents for non-webpack based setup
+* Add a test in 'it' block
+* ng test
