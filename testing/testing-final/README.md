@@ -7,3 +7,8 @@
 * expect at the end for our Expectation
 * detectChanges to trigger changeDetection so that the template gets rendered
 * nativeElement gives access to the template
+
+### 5. Running Tests (with the CLI)
+
+* ng test to run our tests
+* Make any changes to fail our tests
