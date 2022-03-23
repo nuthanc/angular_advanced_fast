@@ -164,3 +164,33 @@
 * Material Icon Theme
 * Angular Essentials by John Papa
 * Format Document
+
+### 4. Understanding the Config Files
+
+* .editorconfig
+  * Picked up by IDEs and apply configs
+* .prettierrc
+  * Autoformatting tool
+* .gitignore
+  * For git to ignore
+* angular.json
+  * Project configuration
+* browserslist
+  * Picked up by Angular CLI when we build Project for Production
+  * Which browsers to support
+* karma.conf.js
+  * For testing
+  * Unittests
+* package.json
+  * dependencies and devDependencies(for building our project and not part of running app)
+* package-lock.json
+  * Exact version saved here based on package.json
+* tsconfig.json
+  * Configures Typescript Compiler
+  * angularCompilerOptions
+    * Picked up by Angular Compiler
+      * Kicks in after Typescript Compiler which converts TS code to JS code
+      * Angular Compiler compiles the Angular App(Compiled JS and HTML templates) into instructions that can be executed at Runtime(Real DOM instructions that the Browser understands)
+      * Check Official docs
+* tslint.json
+  * For code quality
