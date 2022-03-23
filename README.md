@@ -156,3 +156,11 @@
 * ng new angular-config
   * routing: no
   * css
+
+### 3. IDE & Project Setup
+
+* VS Code
+* Darcula
+* Material Icon Theme
+* Angular Essentials by John Papa
+* Format Document
