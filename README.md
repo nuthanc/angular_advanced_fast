@@ -138,3 +138,21 @@
 * Also check https://github.com/nuthanc/microservice/tree/master/ticketing#scope-of-testing
 
 ## Add testing folder
+
+## Angular as a Platform & Closer Look at the CLI
+
+### 2. A Closer Look at ng new
+
+* sudo npm install -g @angular/cli@latest
+* New project using ng new
+* ng new --help
+  * --create-application(default)
+  * --dry-run (without writing out results)
+  * --inline-template
+  * --prefix
+  * --routing
+  * --skip-tests
+* Official documentation
+* ng new angular-config
+  * routing: no
+  * css
