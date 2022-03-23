@@ -194,3 +194,16 @@
       * Check Official docs
 * tslint.json
   * For code quality
+
+### 5. Important CLI Commands
+
+* ng help
+* Official documentation(CLI commands)
+* ng serve --help
+  * --port, --prod, --open
+* ng generate --help
+  * ng generate component --help
+* ng lint
+  * For any linting errors
+* ng build --prod
+  * dist folder: generated files
