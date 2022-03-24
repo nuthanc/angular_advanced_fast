@@ -243,3 +243,8 @@
 
 * ng generate @angular/material:nav main-nav
 * Adds on to default schematics
+
+### 10. Smooth Updating of Projects with ng update
+
+* ng update
+  * Analyze what needs to be updated
