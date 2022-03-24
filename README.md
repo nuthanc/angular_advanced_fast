@@ -223,3 +223,13 @@
   * file replacement for environment
   * --configuration=production
   * --configuration=staging
+
+### 7. Angular Schematics - An Introduction
+
+* ng generate
+  * Generating new building blocks
+* ng add
+  * Add libraries and capabilities to a project
+* ng update
+  * Update projects and libraries
+* Custom schematics can also be built
