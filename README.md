@@ -233,3 +233,8 @@
 * ng update
   * Update projects and libraries
 * Custom schematics can also be built
+
+### 8. The ng add Command
+
+* ng add @angular/material
+* Makes changes to some project files as well
