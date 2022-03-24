@@ -260,3 +260,19 @@
 * Official docs -> Deployment
 * ng add @angular/fire
   * Add firebase tools before
+
+### 12. Understanding Differential Loading
+
+![img](img/dl.png)
+* browserslist
+  * Browsers to support
+* tsconfig.json
+  * target for version of js
+* polyfills.ts
+* polyfills for supporting
+* In dist, 2 versions of every file
+* es5 -> older browsers
+* es2015 -> newer browsers
+* index.html
+  * runtime executes first and there it decides which other files it needs to load
+* Official docs
