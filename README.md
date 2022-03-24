@@ -238,3 +238,8 @@
 
 * ng add @angular/material
 * Makes changes to some project files as well
+
+### 9. Using Custom ng generate Schematics
+
+* ng generate @angular/material:nav main-nav
+* Adds on to default schematics
