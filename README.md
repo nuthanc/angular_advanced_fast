@@ -248,3 +248,15 @@
 
 * ng update
   * Analyze what needs to be updated
+
+### 11. Simplified Deployment with ng deploy
+
+* Build code for different environments
+* ng build/test/lint
+  * Perform certain build steps
+* ng deploy
+  * Perform certain deployment steps
+* Customizable automation commands
+* Official docs -> Deployment
+* ng add @angular/fire
+  * Add firebase tools before
