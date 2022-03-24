@@ -207,3 +207,19 @@
   * For any linting errors
 * ng build --prod
   * dist folder: generated files
+
+### 6. The angular.json File - A Closer Look
+
+* Used by cli behind the scenes
+* projectType can be application or library
+* architect for different commands like build and options
+  * build has many options
+  * assets for copying to dist folder
+  * scripts for copying over js files(like gmaps, lodash) to dist
+  * options contains the default
+* Official docs has this info as well
+  * Workspace configuration
+* configuration for different environments
+  * file replacement for environment
+  * --configuration=production
+  * --configuration=staging
