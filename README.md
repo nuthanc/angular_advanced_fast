@@ -290,3 +290,14 @@
   * cd angular-shop
   * ng generate application backend
 * Now we have one root folder and the projects in projects folder
+
+### 14. Angular Libraries - An Introduction
+
+* ng generate library my-button
+  * Not run as a standalone but shared across multiple applications
+  * Like Angular Material
+  * ng-package.json file
+  * src/public-api.ts file
+  * lib folder containing starting files
+* Official docs: Angular libraries -> Creating Libraries
+* ng-content to pass content from other Components
