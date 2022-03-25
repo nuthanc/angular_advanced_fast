@@ -276,3 +276,17 @@
 * index.html
   * runtime executes first and there it decides which other files it needs to load
 * Official docs
+
+### 13. Managing Multiple Projects in One Folder
+
+* Multiple projects in one folder
+  * ng generate library/application
+  * ng generate application backend
+* Created under projects folder
+  * ng serve --project=backend
+  * Just ng serve will run the defaultProject mentioned in angular.json
+* If you don't want one project within another project(under projects), you can do the below
+* **Recommended way:** ng new angular-shop --create-application=false
+  * cd angular-shop
+  * ng generate application backend
+* Now we have one root folder and the projects in projects folder
