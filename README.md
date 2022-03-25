@@ -347,3 +347,13 @@ constructor() {
   * Tell Angular that you are eventually going to use it
 * Inject Injector and DomSanitizer
 * Check official docs
+
+### Updating Existing Projects
+
+```txt
+Want to update existing projects? 
+
+ng update should do the trick.
+
+If you're facing issues, visit: http://update.angular.io
+```
