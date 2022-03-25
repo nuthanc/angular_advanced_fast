@@ -301,3 +301,49 @@
   * lib folder containing starting files
 * Official docs: Angular libraries -> Creating Libraries
 * ng-content to pass content from other Components
+
+## Angular Changes & New Features
+
+### First Look at Angular Elements
+
+* Angular Elements
+  * Angular Components as Native Web Components(Part of JS API)
+  * Useful for loading Dynamic content
+![Alert](img/alert.png)
+* In App Component, instead of 
+```html
+<app-alert></app-alert>
+
+<!-- Bind to content, where content is a property in Alert -->
+<div [innerHTML]="content"></div>
+```
+```ts
+// In App
+constructor() {
+  setTimeout(() => { // To simulate api call
+    this.content = "<p>A paragraph</p>"
+  }, 1000)
+}
+
+// Using innerHTML to render to the DOM
+```
+```ts
+// Our own component to render dynamically
+constructor() {
+  setTimeout(() => { 
+    this.content = "<app-alert message='Rendered dynamically'></app-alert>" // Coming from api call
+  }, 1000)
+}
+
+// Not recognized as html element in the browser
+```
+* npm i @angular/elements
+* For the above to work, we need to import createCustomElement from @angular/elements
+* Some changes in package.json, app.component and polyfills.ts
+  * const AlertElement = createCustomElement(AlertComponent, {injector})
+  * customElements.define('my-alert', AlertElement)
+* Add entryComponents in app.module
+  * Array of Components which we don't use via Selector or Routing
+  * Tell Angular that you are eventually going to use it
+* Inject Injector and DomSanitizer
+* Check official docs
