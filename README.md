@@ -357,3 +357,9 @@ ng update should do the trick.
 
 If you're facing issues, visit: http://update.angular.io
 ```
+
+### TypeScript
+
+* https://www.typescriptlang.org/docs/
+
+## Attaching typescript folder
