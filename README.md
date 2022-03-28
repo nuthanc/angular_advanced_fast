@@ -363,3 +363,9 @@ If you're facing issues, visit: http://update.angular.io
 * https://www.typescriptlang.org/docs/
 
 ## Attaching typescript folder
+
+## Adding Offline Capabilities with Service Workers
+
+* For making it available offline
+
+## Add ng-pwa-02-finished
