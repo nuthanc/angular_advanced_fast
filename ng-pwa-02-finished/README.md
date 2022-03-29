@@ -38,3 +38,17 @@
 * updateMode: After pushing new Angular App and Service worker
 * resources relative to dist
 * New tab -> new service worker
+
+### 4. Caching Dynamic Assets & URLs
+
+* Checking ngsw-config.json
+* dataGroups for dynamic data(HTTP requests)
+* Different API version with version
+* cacheConfig: 
+  * maxSize: how many entries(responses)
+  * maxAge: how old before we get rid of and fetch again
+  * timeout: wait before using cache
+  * strategy: 
+    * freshness: Always backend but cache when offline(Takes timeout into account)
+    * performance: Get something on the screen as quick as possible(Takes maxAge into account)
+* ng build --prod and serve again
