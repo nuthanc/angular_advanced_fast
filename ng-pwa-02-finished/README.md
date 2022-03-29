@@ -52,3 +52,10 @@
     * freshness: Always backend but cache when offline(Takes timeout into account)
     * performance: Get something on the screen as quick as possible(Takes maxAge into account)
 * ng build --prod and serve again
+
+### Links
+
+```txt
+Official Angular Service Worker Docs: https://angular.io/guide/service-worker-intro
+Academind Resources on PWAs: https://academind.com/learn/progressive-web-apps
+```
