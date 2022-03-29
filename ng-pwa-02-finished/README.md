@@ -25,3 +25,16 @@
 * ng build --prod
 * cd dist/angular-pwa && http-server -p 8081
 * Reload twice because of fetching from cache
+
+### 3. Caching Assets for Offline Use
+
+* Checking ngsw-config.json
+* index: Root page which we wanna cache and load
+* assetGroups: which static assets should be cached
+  * prefetch: When Page loads service worker will go ahead and prefetch all the assets mentioned in assetGroups
+  * lazy: Load when only you need them
+  * urls in resources for fonts
+  * After adding urls, ng build --prod again and serve
+* updateMode: After pushing new Angular App and Service worker
+* resources relative to dist
+* New tab -> new service worker
