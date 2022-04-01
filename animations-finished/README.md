@@ -23,3 +23,8 @@ That's all!
   * i.e we work with states
 * So, in the trigger mention the 2 states and their styles
 * Still we don't see any animation, but only see the normal state's css styles
+
+### 5. Switching between States
+
+* Add functionality for onAnimate method which is triggered on click of Animate button
+* Switch the state in that method
