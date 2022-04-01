@@ -42,3 +42,10 @@ That's all!
 * Extra style during the transition
 * Let's do it for wildState
 * Wildcard '*' for any state
+
+### 8. Transition Phases
+
+* For styles during the animation, use style method in second argument of animate
+* After the animation, it instantly jumps to end state which is not smooth
+* So instead of having animate as 2nd argument of transition, have an array containing starting and in-between states during the transition
+* Add 2 animate with the last animate just having the timing
