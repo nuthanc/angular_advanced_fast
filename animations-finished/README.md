@@ -28,3 +28,10 @@ That's all!
 
 * Add functionality for onAnimate method which is triggered on click of Animate button
 * Switch the state in that method
+
+### 6. Transitions
+
+* Implement transition method in animations of @Component
+  * Same level as state method
+* transition from and to denoted using =>
+* Use animate method for the time it should take
