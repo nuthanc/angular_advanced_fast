@@ -369,3 +369,9 @@ If you're facing issues, visit: http://update.angular.io
 * For making it available offline
 
 ## Add ng-pwa-02-finished
+
+## Angular Animations
+
+## Attached animations-finished
+
+* Check its README
