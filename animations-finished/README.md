@@ -35,3 +35,10 @@ That's all!
   * Same level as state method
 * transition from and to denoted using =>
 * Use animate method for the time it should take
+
+### 7. Advanced Transitions
+
+* If we want same timing for state change, then we can use <=>
+* Extra style during the transition
+* Let's do it for wildState
+* Wildcard '*' for any state
