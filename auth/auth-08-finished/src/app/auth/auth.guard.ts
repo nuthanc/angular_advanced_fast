@@ -30,11 +30,11 @@ export class AuthGuard implements CanActivate {
         if (isAuth) {
           return true;
         }
-        return this.router.createUrlTree(['/auth']);
+        return this.router.createUrlTree(['/auth']); // Avoiding race condition with tap navigate
       })
       // tap(isAuth => {
       //   if (!isAuth) {
-      //     this.router.navigate(['/auth']);
+      //     this.router.navigate(['/auth']); // In some edge cases, this would lead to race condition with multiple redirects that interfere with each other
       //   }
       // })
     );
