@@ -20,10 +20,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
-    this.userSub = this.store
+    this.userSub = this.store // Could've used selectors and async pipe to avoid Unsubscribing
       .select('auth')
-      .pipe(map(authState => authState.user))
-      .subscribe(user => {
+      .pipe(map((authState) => authState.user))
+      .subscribe((user) => {
         this.isAuthenticated = !!user;
         console.log(!user);
         console.log(!!user);
