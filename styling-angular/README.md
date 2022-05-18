@@ -46,9 +46,10 @@
 * BEM convention separating by prefix
 * Breaking Up large files into Partials
 * First approach: External Link Method
-  * All css in global area: styles under src
+  * All css in global area: **styles under src**
     * Styles for styling all of the Components
-  * In styles.scss, import all the partials
+  * In **styles.scss**, import all the partials
+  * This styles.scss is loaded in angular.json
   * No style file in the Components
 * Second approach: View Encapsulation Method
   * View Encapsulation mode to None
@@ -64,7 +65,28 @@
   * Media Queries
   * Utilities
 
-### Global Styles: A More Modular Approach
+### Global Styles: A More Modular Approach(Style Encapsulation)
 
-* Both Global and Local Styles
-* Use of Sass for Mixins, Partials
+* Not all Styles need to be Encapsulated
+  * Both Global and Local Styles
+* Global Styles: 2 Approaches
+  * Class Based System
+  * Mixins and variables only
+* **scss directory in shared folder** under App for Global styles
+  * various directories and partials within them
+    * Prefix them with directory single letter like l-(or anything else) to avoid conflicts
+  * Rest of the Local styles in the Component
+* How to include these Global styles in the Component. There are 2 ways:
+  * Root styles.scss
+  * Turn Off View Encapsulation in App component
+    * Styles not visible until App has fully loaded, so we'll have to link to them in the root style sheet instead
+* With many Global styles in the Component, it will look messy
+* This can be prevented by converting the global items into mixins and variables and importing them
+* https://github.dev/pluralsight-styling-angular-apps/demos/tree/module-03-06
+* https://github.dev/pluralsight-styling-angular-apps/demos/tree/module-03-07
+* General rules: 
+  * Include Mixin first and include our styles later
+  * Never override any styles(Rarely make an exception)
+* Normalize.css for Browser Reset
+  * Reset all Default Browser styles to make it a Plain levelling field
+* Down side of this approach: Code duplication after processing to css
