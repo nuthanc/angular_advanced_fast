@@ -1,6 +1,7 @@
 # PluralSight Angular Styling course
 
-* https://github.com/pluralsight-styling-angular-apps/demos
+* https://github1s.com/pluralsight-styling-angular-apps/demos
+* Some notes in Pluralsight
 
 ## How Styles Work in Angular
 
@@ -82,11 +83,72 @@
     * Styles not visible until App has fully loaded, so we'll have to link to them in the root style sheet instead
 * With many Global styles in the Component, it will look messy
 * This can be prevented by converting the global items into mixins and variables and importing them
-* https://github.dev/pluralsight-styling-angular-apps/demos/tree/module-03-06
-* https://github.dev/pluralsight-styling-angular-apps/demos/tree/module-03-07
+* https://github1s.com/pluralsight-styling-angular-apps/demos/tree/module-03-06
+* https://github1s.com/pluralsight-styling-angular-apps/demos/tree/module-03-07
 * General rules: 
   * Include Mixin first and include our styles later
   * Never override any styles(Rarely make an exception)
 * Normalize.css for Browser Reset
   * Reset all Default Browser styles to make it a Plain levelling field
 * Down side of this approach: Code duplication after processing to css
+
+### Simplifying Global Imports
+
+* Add stylePreprocessorOptions object in angular.json
+  * Include all the global style files in includePaths array
+* Now in the imports, we can simply include the file name
+* Recompile the App for the changes to take Effect
+
+### Naming Conventions
+
+* B.E.M convention for Block Element Modifier
+  * block__element--modifier
+```html
+<ul class="nav">
+  <li class="nav__item"> 
+    Home
+  </li>
+  <li class="nav__item nav__item--active">
+    About
+  </li>
+</ul>
+```
+* We can create more simplistic class names since names are local within the Component
+* Check Traditional B.E.M vs Angular notes
+  * The names are simple in Angular as they are local to the Component
+  * Like items and item instead of app-navbar-header and app-navbar-header__item
+  * For Modifier, item--selected instead of app-navbar-header__item--selected
+
+### Predictable Sizing with Relative Units
+
+* https://github1s.com/pluralsight-styling-angular-apps/demos/tree/module-03-12
+  * Check accordion component styles
+  * All styles with px
+  * Switch to Relative units(like em) to make life easier
+* Unpredictable results since Angular components are Modular and relative units are based off Parent
+* We can use the rem unit to fix this
+  * In every Component(:host), set its base font size to 1 rem 
+* https://github1s.com/pluralsight-styling-angular-apps/demos/tree/module-03-14
+
+### Good CSS Practices & Style Overrides
+
+* Keep Specificity Low
+  * Only use classes
+  * Pseudo classes
+  * Adjacent sibling combinator(.class + .sibling)
+  * Only veer from this when there is absolutely no other way
+* Avoid IDs altogether
+* https://github1s.com/pluralsight-styling-angular-apps/demos/tree/module-03-15
+  * navbar-primary Comp
+  * bem convention
+  * Sass '&' Feature for parent name(https://css-tricks.com/the-sass-ampersand/)
+    * For ex, if parent is .item and we want .item__icon, we can simply use &__icon
+* Have styles similar to order of markup as seen below
+* https://github1s.com/pluralsight-styling-angular-apps/demos/tree/module-03-16
+  * navbar-primary Comp
+* Avoid for the most part Overriding styles
+  * https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-03-17/app/shared/components/content/tabs/tabs.component.scss
+  * Add separate classes for inactive and active, instead of overriding in active
+* Responsive design
+  * https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-03-18/app/shared/components/navigation/navbar-primary/navbar-primary.component.scss
+  * Completely separate out min-width and max-width instead of overriding styles
