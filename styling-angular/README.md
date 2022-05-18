@@ -56,6 +56,13 @@
   * Style sheet processed by Angular and will be embedded in the head of the Document
     * Styles will not be available until App is fully loaded and processed by Angular
     * Important when styling the App Loading screen
+* What should be in Global space
+  * Browser Resets
+  * Colors
+  * Common Typography
+  * Layout systems
+  * Media Queries
+  * Utilities
 
 ### Global Styles: A More Modular Approach
 
