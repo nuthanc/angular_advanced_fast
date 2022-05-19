@@ -1,6 +1,7 @@
 # PluralSight Angular Styling course
 
 * https://github1s.com/pluralsight-styling-angular-apps/demos
+* https://app.pluralsight.com/course-player?clipId=34673589-69cf-4c19-b2a6-0e022c9e0aa7
 * Some notes in Pluralsight
 
 ## How Styles Work in Angular
@@ -152,3 +153,13 @@
 * Responsive design
   * https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-03-18/app/shared/components/navigation/navbar-primary/navbar-primary.component.scss
   * Completely separate out min-width and max-width instead of overriding styles
+
+### Component CSS Structure & Organization
+
+* Break main Component scss file into a series of partial files
+* https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-03-19/app/app.component.scss
+* Check scss directory in app folder
+* globals file for host pseudo class that is generic and other files according to the styles they are applying
+* Finally use @import and import them in app.component.scss instead of styleUrls in ts file
+  * Using styleUrls will create style blocks for each scss file in the array
+* https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-03-20/app/app.component.scss
