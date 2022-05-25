@@ -171,3 +171,9 @@
 * Name based on component name to avoid conflicts
 * For Mixins: https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-03-23/app/shared/components/navigation/navbar-primary/scss/_items.scss
 * shared/scss only in Navigation: https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-03-24/app/shared/
+
+### Styling the Pre-bootstrap Loading
+
+* https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-03-25
+  * Loading in index.html
+  * Embed style block right within the Component
