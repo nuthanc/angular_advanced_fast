@@ -163,3 +163,11 @@
 * Finally use @import and import them in app.component.scss instead of styleUrls in ts file
   * Using styleUrls will create style blocks for each scss file in the array
 * https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-03-20/app/app.component.scss
+
+### Local Mixins & Variables
+
+* Variables in local scope like within {} will only be available to that block
+* For variable name: https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-03-22/app/shared/components/navigation/navbar-primary/scss/_items.scss
+* Name based on component name to avoid conflicts
+* For Mixins: https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-03-23/app/shared/components/navigation/navbar-primary/scss/_items.scss
+* shared/scss only in Navigation: https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-03-24/app/shared/
