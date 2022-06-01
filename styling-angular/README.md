@@ -177,3 +177,51 @@
 * https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-03-25
   * Loading in index.html
   * Embed style block right within the Component
+
+## Creating Component Themes
+
+### Component Themes: Layouts & Colors
+
+* https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-04-02
+* Only when layout changes, use different layout files
+  * _layout-01.scss and _layout-02.scss
+* https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-04-03
+  * _color-01.scss and _color-02.scss
+
+### Adding Classes & Using Host
+
+* https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-04-04
+  * app.component.html
+* Wrap in :host and class
+  * _layout-01.scss and _layout-02.scss
+  * _color-01.scss and _color-02.scss
+* Caveat: NO direct access to the Component
+* https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-04-06
+  * promo.component.html
+* https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-04-07
+  * promo.component.ts and using elementRef to determine the proper class
+
+### Using :host-context
+
+* Instead of using logic of elementRef, we can use :host-context
+* https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-04-09
+  * _items.scss
+* Adding custom element of modal in :host-context along with color class
+
+### Conditional Content Display
+
+* https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-04-10
+  * message.component.html
+  * ContentChild in message.component.ts
+
+### Using Custom Properties(CSS Variables)
+
+* Alternative and recommended way to use instead of deep for accessing Child properties from Parent
+* https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-04-12
+  * _globals.scss
+  * modal.component.scss
+* var(--name, default_value)
+* https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-04-13
+  * _root.scss
+* https://github1s.com/pluralsight-styling-angular-apps/demos/blob/module-04-13
+  * app.component.html: saa-modal-highlight
