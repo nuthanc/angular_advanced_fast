@@ -98,3 +98,17 @@
 * gap property for providing gaps between items(Add in flex-container)
   * To check this, add flex: 1(which is flex-grow shorthand) to flex-item
   * gap: 2em in flex-container
+
+### Flexbox in the Real World
+
+* Two items side by side taking 50% width
+  * Before flexbox give them width, float both and clear both
+  * With Flexbox, give flex items flex: 1
+* Content on one side longer than the other
+  * Give min-width or something
+  * With flexbox nothing required(flex: 1 initially set to flex items)
+* 3 equal width columns
+  * Again flex: 1
+* Holy Grail Layout also super simple with Flexbox
+  * The main thing we would use here is flex and flex-direction
+* Also super useful when we have an unknown number of items
