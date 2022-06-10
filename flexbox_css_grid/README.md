@@ -40,6 +40,10 @@
       * Flex do not grow to fill up available space since flex-grow is 0
   * align-self
 
+### Flex Shorthand
+
+* flex-flow as a shorthand for flex-direction and flex-wrap
+* flex as a shorthand for flex-grow flex-shrink and flex-basis
 
 ### Controlling Display Order of Flex Items
 
@@ -112,3 +116,137 @@
 * Holy Grail Layout also super simple with Flexbox
   * The main thing we would use here is flex and flex-direction
 * Also super useful when we have an unknown number of items
+
+### Flexbox vs Grid
+
+* Flexbox controls how items flow in one dimension
+  * Great at handling alignment, distribution and order of content and space
+* Grid controls how items flow in two dimensions
+  * Relies on Defined Gridlines
+
+### Grid Layout Basics
+
+* CSS Grid, like Flexbox is all about relationship between a parent container(Grid Container or Grid) and its direct descendant child items
+* Grid is made out of 2 set of lines, known as Grid lines
+  * One line for Columns of the Grid => Column Axis
+  * One line for Rows of the Grid => Rox Axis
+* Together the above make the Grid Tracks(Grid Column or Grid Row)
+  * Created by space between 2 consecutive row lines or column lines and are given a size which controls how tall a row can be or how wide a column can be
+* Grid cell: Intersection of Grid row and Grid Columns that we can place items into
+* Grid Area: Any portion of the Grid that is contained by 4 Grid lines
+
+### Setting up a Grid
+
+* **Properties on Grid Container**
+  * display of grid to the grid-container
+    * inline-grid to shrink wrap the grid items(Only as much space as the item requires)
+  * grid-template-columns
+    * width(Give as many as for the number of columns)
+    * E.g: grid-template-columns: 6em 6em 6em 6em; (This creates 4 columns, if there are 8 cols, 4 in each row)
+      * This does not look grid like
+      * This is because the Grid does not actually control the size of the items
+      * It simply creates virtual areas for the grid items to live
+      * For placing the Grid items, we use grid-column-start, grid-column-end, grid-row-start, grid-row-end
+  * grid-template-rows
+    * height(Give as many as for the number of rows)
+    * E.g: grid-template-rows: 6em 6em; (This creates 2 rows)
+  * gap property for providing gaps between our columns and rows
+  * row-gap for row gaps
+  * column-gap for column gaps
+  * grid-auto-flow
+* **Properties on Grid items**
+  * grid-column-start: 1
+    * This is the 1st vertical grid line
+  * grid-column-end: 2
+    * It should end at 2
+  * grid-row-start: 1
+  * grid-row-end: 3
+* If we want to place the item in the 2nd column, then
+  * grid-column-start: 2 and grid-column-end: 3
+* If we want it to span for 2 columns
+  * grid-column-start: 1 and grid-column-end: 3
+* If we want to stretch it for the whole row
+  * grid-column-start: 2 and grid-column-end: 4 and grid-row-start: 1 and grid-row-end: 3
+* order property to change the order
+* span keyword for items spanning across grid lines
+
+### Auto Grid Features
+
+* We don't want to manually define rows, columns and their heights(Using grid-column-start, grid-column-end etc) and placing them into these
+* We want automatic placement and when we don't define the positions, the Grid does automatic placement
+  * This is because of default flow horizontally from left to right along the row axis and then top to bottom
+  * grid-auto-flow: row(default)
+  * grid-auto-flow: column -> Top to bottom and then left to right
+* We can also mix auto placed items with explicitly positioned ones
+  * grid-auto-flow: column on the grid container and grid-column-start: 2 and grid-column-end: 4 and grid-row-start: 2 and grid-row-end: 2 on 2nd item
+  * This will force all other auto placed items to wrap around it accordingly
+* order: 1 on one of the items will place this item after all other non-order items
+* With auto grid, we also have a notion of implicit grid lines
+  * Let's say we add an 8th and 9th item, even though we have 2 rows and 4 columns, it will add the 9th item in the 3rd row
+  * This is because a new implicit grid track has been created below these rows
+
+### Grid Shorthand
+
+* grid as a shorthand for grid-template-rows and grid-template-columns
+  * grid: row row / column column;
+* grid-row and grid-column as a shorthand for grid-row-start, grid-row-end and grid-column-start, grid-column-end respectively
+  * grid-row: row-start / row-end;
+  * grid-column: column-start / column-end;
+* grid-area which will accept all 4 of them
+  * grid-area: row-start / column-start / row-end/ column-end;
+* span keyword for items spanning across grid lines
+  * We still need to say what grid line to start on
+  * grid-column: 2 / span 2; (Which is equivalent to grid-column: 2 / 4)
+* repeat keyword for repeated patterns
+  * grid-template-columns: repeat(4, 6em);
+  * grid-template-rows: repeat(2, 6em); equivalent to grid-template-rows: 6em 6em;
+
+### Custom Named Grid Lines
+
+* Name our Grid lines instead of counting to get the item
+* We do it in grid-template-columns or grid-template-rows using square brackets[] and name within it
+* E.g: grid-template-columns: [name1] [name2]
+* Check pluralsight note
+
+### Custom Named Grid Areas
+
+* Grid Area: Any area on a grid contained by 4 Grid lines
+  * grid-area: title on the grid item
+  * grid-area: thumbnail on thumbnail item
+* grid-template-areas
+```css
+.media-container {
+grid: auto auto/ 8em 1fr;
+grid-template-areas : 
+  "title title"
+  "thumbnail content";
+gap: 1em;
+}
+
+/* If we need Complex Grid spacing, we can create empty rows and empty columns */
+.media-container {
+grid: auto 1em auto/ 8em 1.5em 1fr;
+grid-template-areas : 
+  "title title title"
+  ". . ." /* Period for empty */
+  "thumbnail . content";
+}
+```
+### Auto, fr & Overlapping/Layering
+
+* auto for dynamic content
+  * The row or column will size itself based on that content
+* fr used for sizing a grid tracked based as a fraction of available space
+  * E.g: grid-template-columns: 6em 1fr;
+    * 1st column 6em and 2nd column all of available space
+* For Overlapping 
+```css
+/* Total 8 items with 2 rows and 4 columns */
+.grid-item-02 {
+  grid-area: 1 / 1 / 3 / 4;
+}
+```
+* Elements nested within another container to be part of the Grid
+  * display: contents;
+  * Adding display: contents to the body container will make it appear as if it is completely invisible from the layout engine in our browser
+  * This allows the children within this container to be placed on the Grid
