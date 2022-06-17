@@ -45,7 +45,7 @@ export class DashboardComponent {
 
 ### Provider Tokens and Recipes
 
-* providers in Decorator of Component and Module serves as a token
+* providers value in Decorator of Component and Module serves as a token
 * Similarly the Constructor parameter type that will receive the Injected value acts as a token
 ```ts
 providers: [
@@ -89,3 +89,17 @@ providers: [
   { provide: DataService, useFactory: dataServiceFactory, deps: [LoggerService]} // use of factory method for creating the instance and deps for arguments taken by the Factory method
 ]
 ```
+
+### The Role of Injectors
+
+* Deliver provided services when they're requested via constructor injection
+* Maintain a single instance of each service provided
+* Delegate injection to parent injectors if no service is provided with the token requested
+
+### Hierarchical Injectors
+
+* The Dependency injection system would first try to locate an instance of the service in the injector associated with the Component receiving the Injection
+* If it doesn't find it there, it will then move up a level and look for it in the parent component and its ancestors
+* If it doesn't find it there it will finally move up to the root injector
+* Don't be tempted to provide your services to the default AppComponent rather than the AppModule
+  * If you're using lazy loaded modules, you won't be able to import services provided to the AppComponent
